@@ -15,21 +15,33 @@ body {
 
   header {
     width: 100%;
-    height: 133px;
+    height: 75px;
     background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position:fixed;
     top: 0;
+    
   }
 
-  #myphoto {
-        display: flex;
-    margin-left: 7px;
-    margin-right: 210px;
-    width: 100px;
+
+
+    #myphoto{
+      width:180px;
+      height:150px;
+      margin-left: 7px;
+      margin-right: 115px;
+      background-color: rgb(173, 173, 237);
+      border-radius: 50%;
+      border: 1px solid black;
+      margin-top: 114px;
+    image-rendering: -webkit-optimize-contrast;
   }
+  
+
+    
+ 
 
    
   #name {
@@ -48,7 +60,7 @@ body {
   }
   
   nav > ul {
-    display: flex;
+   display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-inline-start: 0;
@@ -82,9 +94,10 @@ body {
   }
   
   #title {text-align: center;
-  font-size: 
-   40px;
-  padding-top: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2.6rem;
+    line-height: 1.5;
+  padding-top: 50px;
   color: #333
   }
   
@@ -92,14 +105,8 @@ body {
     text-align: center;
     font-size: 16px;
   }
-    #image {
-    display: block;
-        
-    }
-   
-   
-   
-    
+     
+       
     #img-div {
   background-color: white;
       text-align: center;}
@@ -108,7 +115,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 40%;
+    border-radius: 20px;
+    max-width: 100%;
+  justify-content: center;
+  
     }
+    
      
     #img-caption {
       text-align: center;
@@ -117,8 +129,7 @@ body {
        padding-top: 20px;
   
   }
-  img {max-width: 100%;
-  justify-content: center;}
+
     
    #subtitle { text-align: center}
   ul {
@@ -129,6 +140,7 @@ body {
   }
       li {
       margin: 16px 0;
+      list-style-type: none;
   }
 
   .table {
@@ -141,14 +153,10 @@ body {
     border: 1px solid ;
     font-style: italic;
 
-    /* max-width: 545px;
-    margin: 0 auto 50px auto;
-    padding: 10px;
-    text-align: center; */
-  }
+    }
 
    td {
-    border-bottom: 1px solid;
+    
     text-align: center;
 
   }
@@ -165,23 +173,40 @@ body {
       line-height: 1.5;
       text-align: center;
       color: #333;
-      margin: 0;}
+      margin: 0;
+      padding-top: 100px; }
 
-    #webpages li {
+     #webpages li {
     color: #0000EE;
-    text-decoration: underline;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
     padding: 0.5px;
+    transition: transform .2s;
     
   }
+
+  #webpages li:hover{
+    transform:scale(2.5);
+    cursor: pointer;
+}
 
   #hobbies li {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.5;
     text-align: center;
-    padding: 0.5px;
-  }
+    padding: 1px;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 1px solid black;
+    
+  }  
+
+    a {
+      text-decoration: none;
+      
+    }
+
+    
